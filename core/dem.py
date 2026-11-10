@@ -3,7 +3,7 @@ import pandas as pd
 import geopandas as gpd
 
 """
-Randolph Glacier Inventory (RGI) v7.0 is a global dataset of glacier outlines and attributes, released in September 2023 (Maussion et al., 2022). 
+Randolph Glacier Inventory (RGI) v7.0 is a global dataset of glacier outlines and attributes, released in September 2023 (RGI 7.0 Consortium, 2023; Maussion et al., 2022). 
 In this module, we are particularly interested in collecting the CenLat, CenLon and glims_id from the user-specified glacier. 
 This shapefile is used to crop the Digital Elevation Model (DEM) because performing the vectorial shading algorithm on a whole DEM would be too computationally expensive. 
 """
@@ -82,5 +82,6 @@ def load_shapefile(inputs):
 
 """
 References
+RGI 7.0 Consortium, 2023. Randolph Glacier Inventory - A Dataset of Global Glacier Outlines, Version 7.0. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi:10.5067/f6jmovy5navz. Online access: https://doi.org/10.5067/f6jmovy5navz
 Maussion, F., Hock, R., Paul, F., Rastner, P., Raup, B., Zemp, M. and RGI Consortium, 2022, May. The Randolph glacier inventory (RGI) version 7. In EGU General Assembly Conference Abstracts (pp. EGU22-4484).
 """
